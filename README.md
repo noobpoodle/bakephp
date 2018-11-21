@@ -247,9 +247,8 @@ free cake frame work version 1.2 alpha as I have set
 it up was enough.
 
 Also I am doing little more in a different way than  can be done by just baking an app using cake core libs, but taxonomically I am offering more flexibility "out of the box".
-While still providing all the functionality that the
-core cake baker would be used to should they 
-wish to keep that.
+While still providing all the functionality that the core cake 
+baker would be used to should they wish to keep that.
 
     "And you're going to provide this all for nothing, show us it's features, it's quirks, it's differences, and it's potential as a back end for a proprietery CMS?"
     
