@@ -119,7 +119,62 @@ changes or updates to.
 If you don't like my routing, or use of routes, or 
 file folder heirarchy to be blunt, you can change it!
 And really it's meant to be changed.. /html/whatever
-is just the default.
+is just the default. Remember, we are actually using
+default routing for this particular version of cake
+using the default methods. This setup was always 
+quite View > Controller with Model relationships
+arguably optional in less complex database and data
+relationship situations. Where more complexity or the desire to BAKE your app on the fly become important, models can and should be considered.
+
+
+But for simplicity sake, routing is still default,
+it's that simple really. And if some one challenges
+it is lacking the most basic of paradigms in dynamic
+web application functionality, just remind them that
+your entire webroot is still intact, can still spawn
+from your main website DocumentRoot, and with good
+application design be as dynamic and CRUDworthy as it
+needs to be afterall.
+
+Arguing a lack of dynamic or bake content - worthy in server side development flexibility and speed is like comparing Wordpress taxonomy to the petals of a rose that has
+not yet bloomed full. The functionality for creating,
+reading, updating, and deleting and the interaction
+with the RDMS is only a nuisance to one who has not
+yet created a good templating schema for the taxonomy
+of basic app data using their system. I provide this
+basic functionality in a simplified version, given 
+how the "application" (s) are abstracted from default
+for read and usability I consider this an acceptable
+trade for baking apps.
+
+
+And I think you will too, after all you can still feel
+free to bake your app. In short that is a no, dynamic 
+creation of taxonomies exists in my default as it is
+provided through my own Admin back end over "baking".
+Just login to your APP by default at the simple url
+/html/admin/user/  session management is handled by 
+default in my version.
+
+Quite simply how ever, the Admin back end is not 
+required to "bake".
+
+# Example 1.a. (Redux) - So I can still bake my app?
+
+
+Absolutely. Pull routing controllers out of the sub
+directories if you desire as well and use the start
+baking cake page. The system will provide all of the
+functionality you have been used to for naming of
+relational urls, taxonomies, sub directories and the 
+like, I simply prefer to call a spade a spade and
+acknowledge that we are managing taxonomies and meta
+data and can do so with session management integrated
+instead of baking.
+
+Your "later baker" will probably prefer to just keep baking and heck why not, you will still be using an efficient and version saavy core.
+
+
 
 # Example 1.b - A config.sandbox.php file, but why??
 
@@ -189,7 +244,12 @@ honestly got tired of calling it some - thing - cool
 CMS when I realized what I'm introducing for free, I
 sort of think showing it off as a reversioned error
 free cake frame work version 1.2 alpha as I have set 
-it up was enough ;)
+it up was enough.
+
+Also I am doing little more in a different way than  can be done by just baking an app using cake core libs, but taxonomically I am offering more flexibility "out of the box".
+While still providing all the functionality that the
+core cake baker would be used to should they 
+wish to keep that.
 
     "And you're going to provide this all for nothing, show us it's features, it's quirks, it's differences, and it's potential as a back end for a proprietery CMS?"
     
@@ -212,3 +272,131 @@ that content management system which I plan to use
 myself in my projects.
 
 
+And lastly it was not my intention to pull any part of the cake community from baking their apps by default, the modern code base is quite awesome.
+
+
+I simply want bakers to realize that they are appli-
+cation devcelopers and that when it comes to urls
+and paths, taxonomies and routing, the basics of 
+managing that data is more important to setup with
+respect to a properly configured RDMS and a proper
+taxonomical templating ENGINE backend- I believe
+I am promoting good database design and optimization
+by doing this, not leading any one astray. After all
+the same paths and urls can be realized using either
+my own functions provided to the user through Admin
+as can be had baking.
+
+
+Yes with proper model relationships and schema in place the cake system provides all of this functionality, Which is why my functions use them too.
+
+In it's core I also feel that I am addressing old
+long forgotten struggles of the cake frame work 
+which have most certainly been "mostly" addressed.
+No pun intended, but if cake ever felt bloated it
+was always related to how the core handled baking
+for only a few versions.
+
+		"Are you saying that MVC is being challenged due to the limitations imposed in web server application logic"
+
+That would be an interesting topic to discuss in
+terms of some thing like nodeJS, it is not really
+appropriate here, because if I can provide an app
+that does this better by abstracting the nature
+of it's models through more RDMS calls or by
+controller logic I am still doing nothing new but
+we would be using functionality I have provided
+that would manage taxonomical data through
+differently structured tables and table 
+relationships without the building of bloated
+queries which use nearly the same amount of
+data, ergo my /html/admin app included as a
+backend for "baking", which can be disregarded
+for a view controller setup or promoted over
+core functionality in favor of ongoing taxonomy
+and data "type" management ultimately pushing
+the view to a /html/client or similar doc root
+front facing web app.
+
+This is also why the user is presented with the 
+option to have bake by themselves or with the 
+help of cake core libs.
+
+And so of course MVC has been actually been challenged in context of paradigm, But rarely perfected in terms of speed.
+I feel that Cake's core libs come close to it sure
+but with a few extra data fields and using my 
+own functions I have in reality realized major
+speed boosts in content, data, and data type
+creation AND presentation to an extent that
+that reason alone is enough for me to want to
+put this code base public, And I will provide
+bench marks as well.
+
+
+
+And this also addresses a major point of contention in considering data management with PHP in general, And "which engine" best uses PHP's engine.
+
+
+This is where we are at as PHP developers in the
+Autumn of 2018. Yes this is because of nodeJS, 
+no there is no answer. At least none I feel safe
+putting off on any one elses system aside from 
+my own, cake custom.
+
+
+The speed of the system, and the handling of "virtual" models in context over files used to build queries is reason enough to be involved in the project.
+
+
+I would not expect any one who has not dealt with an improperly configured baked cake app hacked up to work, to understand, but speed gains are 
+quite significant there.
+And at the cost of a few extra data fields per
+tabular taxonomical data type, parent to child,
+etc. was worth learning how to perfect, debug,
+and develop fully., as I learned the nuiances of 
+how the cake core libs handle models and build
+queries moons ago. I still remember the eureka
+moment as I learned how to reduce those query
+processing durations to a few ms by virtualizing
+the queries built using my own database library,
+database functions, using default routing setup
+in a nondefault and "abstracted" as I call it, app
+view controller schema that also reduced time
+to render due to the simple and basic nature of
+request handling in http, tcp ip and so forth by
+separating view paths to even so far as the doc
+root (need not be at /html/client etc) so that 
+the data returned by an optimized query had
+less application logic to traverse before being
+rendered to the user. 
+
+Staring directly at the before and after queries, comparing lesser application logic and routed paths to boot, was amazing, as I had bested core libs.
+And so began my disdain for using the core libs
+for baking ANY app whatsoever as has made
+the frame work popular with a majority of it's
+user base! Imagine seeing little change in this
+regard and knowing you bettered the frame 
+work over the past six years since 2012, enter
+my current repository.
+
+I would not contend to have created better 
+handling of taxonomies or data types and 
+meta data than the cake core libs can, any
+more than I would challenge the community
+of beloved Wordpress and Drupal devs. But,
+I have benchmarked my system in it's past,
+and speed wasn't even close, not only have I
+made it faster than it exists "baking" apps by
+using default libs, it is worlds faster than the
+better setup WP and Drupal apps I have ever
+come across in simple terms, and I look to
+to reaching that juncture publicly in comparing
+a similarly setup application using default
+methods with comparable systems. The 
+proprietery developer in me partly designed
+this system as one last rebellion against
+joining the crowd of Wordpress templaters,
+and themers, and also partly because of
+basic licensing & royalty,
+
+
+If by chance you have used my system and found it to be as efficient and straight forward as I intended it to be please drop a positive line any time.
